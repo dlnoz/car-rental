@@ -3,35 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
     <title>Car Rental</title>
+    <link rel="icon" href="./images/Logo.svg">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style type="text/tailwindcss">
-        @layer utilities {}
-    </style>
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
 </head>
 <body>
-    
-    <header class="py-[27px] md:py-[18px] border-b-[1.5px] border-[#E5E7EA] ">
-        <div class="containers flex items-center gap-5"></div>
-        <div class="flex items-center gap-6">
-            <a class="hover:text-[#299764] duration-300 hidden md:block text-[16px] text-[#000000] " href="#"></a>  -->
-            <button class="hover:bg-[#299764] hover:text-white duration-300 hidden md:flex w-[58px]"></button>  -->
-            <button class="hover:bg-transparent border-[1.5px] border-transparent hidden md:flex items-center"></button>  -->
-            <button class="xl:hidden">
-                <img src="./images/header-menu.png" alt="header menu img" width="40" height="20">
-            </button>
+    <header class="py-[27px] md:py-[18px] border-b-[1.5px] border-[#E5E7EA]">
+        <div class="containers flex items-center justify-between">
+             <div data-aos="fade-right"
+             data-aos-offset="300"
+             data-aos-easing="ease-in-sine" class="flex items-center gap-5">
+                <a href="/">
+                    <img src="./images/Logo.svg" alt="img" width="150" height="40">
+                </a>
+                <nav class=" hidden xl:flex items-center">
+                    <a class="hover:text-[#299764] duration-400 py-[18] px-4 text-[18px] font-medium text-[#000000]" href="#">Categories</a>
+                    <a class="hover:text-[#299764] duration-400 py-[18] px-4 text-[18px] font-medium text-[#000000] flex items-center gap-[14px]" href="#">
+                       <span> About Us</span>
+                       <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.15281 0.222116C9.4213 0.490602 9.4213 0.925902 9.15281 1.19439L5.48615 4.86105C5.21766 5.12954 4.78236 5.12954 4.51387 4.86105L0.847208 1.19439C0.578722 0.925903 0.578722 0.490602 0.847208 0.222116C1.11569 -0.0463691 1.55099 -0.0463691 1.81948 0.222116L5.00001 3.40265L8.18054 0.222116C8.44903 -0.0463694 8.88433 -0.0463694 9.15281 0.222116Z" fill="currentColor"/>
+                        </svg>
+                        
+                    </a>
+                    <a class="hover:text-[#299764] duration-400 py-[18] px-4 text-[18px] font-medium text-[#000000] flex items-center gap-[14px]" href="#">
+                        <span>Help center</span>
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.15281 0.222116C9.4213 0.490602 9.4213 0.925902 9.15281 1.19439L5.48615 4.86105C5.21766 5.12954 4.78236 5.12954 4.51387 4.86105L0.847208 1.19439C0.578722 0.925903 0.578722 0.490602 0.847208 0.222116C1.11569 -0.0463691 1.55099 -0.0463691 1.81948 0.222116L5.00001 3.40265L8.18054 0.222116C8.44903 -0.0463694 8.88433 -0.0463694 9.15281 0.222116Z" fill="currentColor"/>
+                            </svg>
+                    </a>
+                </nav>
+             </div>
+              <div data-aos="fade-left"
+              data-aos-anchor="#example-anchor"
+              data-aos-offset="500"
+              data-aos-duration="500" class="flex items-center gap-6">
+                <a class="hover:text-[#299764] duration:400 hidden  md:flex text-[16px] font-semibold text-[#000000]" href="tel:+18554200000">+1 855 420 0000</a>
+                <button  class="hover:bg-[#299764] hover:text-white duration-400 hidden  md:flex w-[58px] h-[58px] rounded-full bg-[#F5F5F5]  items-center justify-center">
+                    <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="58" height="58" rx="29" fill="none"/>
+                        <path d="M29 21.2083C24.6968 21.2083 21.2083 24.6967 21.2083 28.9999C21.2083 33.3031 24.6968 36.7916 29 36.7916C33.0495 36.7916 36.377 33.7027 36.7558 29.7523C36.7734 29.5684 36.6789 29.3919 36.5162 29.3046C36.3534 29.2173 36.1541 29.2362 36.0107 29.3526C35.2227 29.9921 34.2192 30.3749 33.125 30.3749C30.5937 30.3749 28.5416 28.3229 28.5416 25.7916C28.5416 24.2882 29.265 22.9538 30.3847 22.1173C30.5327 22.0067 30.5999 21.818 30.555 21.6387C30.51 21.4595 30.3619 21.3247 30.1792 21.297C29.7944 21.2385 29.4006 21.2083 29 21.2083Z" fill="currentColor"/>
+                        </svg>
+                        
+                </button>
+                <button class="hover:bg-transparent hover:border-[1.5px] hover:border-[#299764] hover:text-[#299764] duration-400  hidden  md:flex  items-center gap-2 bg-[#299764] text-white font-medium text-[18px] rounded-[100px] py-[18px] px-[30px]">
+                    <span>Login</span>
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.3125 17.4166C10.3125 17.0369 10.6203 16.7291 11 16.7291H16.5C16.6265 16.7291 16.7291 16.6265 16.7291 16.4999L16.7291 5.49992C16.7291 5.37335 16.6265 5.27075 16.5 5.27075L11 5.27075C10.6203 5.27075 10.3125 4.96295 10.3125 4.58325C10.3125 4.20356 10.6203 3.89575 11 3.89575H16.5C17.3859 3.89575 18.1041 4.61396 18.1041 5.49992V16.4999C18.1041 17.3859 17.3859 18.1041 16.5 18.1041H11C10.6203 18.1041 10.3125 17.7963 10.3125 17.4166Z" fill="white"/>
+                        <path d="M3.20831 12.0222C3.20831 12.5285 3.61872 12.9389 4.12498 12.9389H8.5763C8.59732 13.2647 8.62363 13.5902 8.65524 13.9154L8.68243 14.1952C8.72664 14.65 9.20968 14.9225 9.62183 14.7249C11.2974 13.9219 12.8143 12.8231 14.0995 11.4812L14.127 11.4525C14.3718 11.1969 14.3718 10.7937 14.127 10.5381L14.0995 10.5094C12.8143 9.16753 11.2974 8.06866 9.62183 7.26564C9.20969 7.06812 8.72664 7.34055 8.68243 7.79544L8.65524 8.0752C8.62363 8.40037 8.59732 8.72592 8.5763 9.05173L4.12498 9.05173C3.61872 9.05173 3.20831 9.46214 3.20831 9.9684V12.0222Z" fill="currentColor"/>
+                        </svg>
+                </button>
+                <button class=" xl:hidden">
+                    <img src="./images/menu.svg" alt="menu img" width="40" height="20">
+                  </button>
+              </div>
         </div>
     </header>
+    <main>
+        <section class="pt-5 pb-[133px] px-[20px] md:px-0">
+            <div class="containers hero !pt-[60px]  relative">
+                <div class=" sm:w-[416px] mx-auto text-center">
+                    <h2 class="font-semibold text-[24px] sm:text-[36px] text-white mb-[10px]">Compact cars</h2>
+                    <p class=" text-[12px] sm:text-[16px] text-white "> Rent cars as you are comfortable and where you are comfortable.</p>
+                </div>
+                <form class="md:w-[600px] absolute right-0 left-0 mx-auto bottom-[-35px] shadow-lg rounded-[100px] overflowy-hidden"  autocomplete="off" method="get">
+                    <input class="focus:shadow-lg focus:shadow-[#299764] duration-400 outline-none font-medium text-[18px] text-[#555555]  w-full py-[22px] pl-[30px] rounded-[100px]  placeholder:text-[#555555] placeholder:font-medium placeholder:text-[18px]" required aria-label="search..." placeholder="Find the car of your dreams" name="Find the car of your dreams" type="text">
+                    <button class=" absolute top-0 bottom-0 right-1 my-auto w-[58px] h-[58px]  text-white" type="submit">
+                        <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="58" height="58" rx="29" fill="#299764"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M31.3851 32.4458C28.7348 34.5685 24.8554 34.4014 22.3986 31.9446C19.7626 29.3086 19.7626 25.0347 22.3986 22.3987C25.0346 19.7626 29.3085 19.7626 31.9445 22.3987C34.4013 24.8554 34.5684 28.7349 32.4457 31.3851L37.6014 36.5408C37.8943 36.8337 37.8943 37.3085 37.6014 37.6014C37.3085 37.8943 36.8336 37.8943 36.5407 37.6014L31.3851 32.4458ZM23.4593 30.8839C21.409 28.8337 21.409 25.5096 23.4593 23.4593C25.5095 21.4091 28.8336 21.4091 30.8839 23.4593C32.9326 25.5081 32.9341 28.8288 30.8884 30.8794C30.8869 30.8809 30.8854 30.8824 30.8839 30.8839C30.8824 30.8854 30.8809 30.8869 30.8794 30.8884C28.8288 32.9342 25.508 32.9327 23.4593 30.8839Z" fill="currentColor"/>
+                            </svg>
+                            
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+   
 
-
-
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
           theme: {
-            extend: {}
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
           }
         }
-    </script>
+        AOS.init();
+      </script>
 </body>
 </html>
